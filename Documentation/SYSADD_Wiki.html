@@ -166,7 +166,7 @@
 <p style="text-indent:30px; text-align: justify">During the 2016 elections, congress will have their own server wherein the members of the senate and house of representatives can monitor the canvassing of the votes and to officially proclaim the winner for the national level. (Retrieved on August 27, 2016 / http://www.rappler.com/newsbreak/iq/91663-philippine-automated-election-sytem-explained).</p>
 
 ====Issues in the system====
-<p style="text-indent:30px; text-align: justify">During the 2016 elections, Bong Bong Marcos’ camp believes that there exists a “Fourth Server” or also known as the “Queue Server”. It has been revealed that the Comelec and Smartmatic has been keeping it from the public. Instead of letting the ERs be directly transmitted to the three official servers, namely the Municipal Board of Canvassing Server, Comelec Server, and the Transparency server, the results were first being processed and consolidated in the “Queue Server”. Another problem with the secret server is that the source code being used was never reviewed despite of it being a requirement in the law. Moreover, there were no poll watchers assigned for these servers making it questionable to both the public and the administrators. According to a statement made by Rodriguez, a representative of Marcos’ camp, the integrity of the 2016 May elections has been questioned because of the unexpected situation made by the Comelec and Smartmatic. The ERs that were presented to the public did not come directly from the transparency server.  Alternatively, the results were first transmitted to a “Queue Server” where they were “consolidated and processed” and the “Queue Server” sends the data to the transparency servers which is against the law. (Retrieved on August 10, 2016/ http://www.manilatimes.net/smartmatic-admits-using-unofficial-servers/275442/).</p>
+<p style="text-indent:30px; text-align: justify">During the 2016 elections, Bong Bong Marcos’ camp believes that there exists a “Fourth Server” or also known as the “Queue Server”. It has been revealed that the Comelec and Smartmatic has been keeping it from the public. Instead of letting the ERs be directly transmitted to the three official servers, namely the CCS, Central Server, and the Transparency server, the results were first being processed and consolidated in the “Queue Server”. Another problem with the secret server is that the source code being used was never reviewed despite of it being a requirement in the law. Moreover, there were no poll watchers assigned for these servers making it questionable to both the public and the administrators. According to a statement made by Rodriguez, a representative of Marcos’ camp, the integrity of the 2016 May elections has been questioned because of the unexpected situation made by the Comelec and Smartmatic. The ERs that were presented to the public did not come directly from the transparency server.  Alternatively, the results were first transmitted to a “Queue Server” where they were “consolidated and processed” and the “Queue Server” sends the data to the transparency servers which is against the law. (Retrieved on August 10, 2016/ http://www.manilatimes.net/smartmatic-admits-using-unofficial-servers/275442/).</p>
 
 <p style="text-indent:30px; text-align: justify">Officially, there are three servers namely, the transparency server, the central server, and the canvassing center servers. When a voter fills out a ballot it would be fed into the Vote Counting Machine (VCM). The data entering the machine would not be sent to its corresponding servers until the end of the voting period. The votes are then transmitted to the three servers that are independent with each other. This is to secure the data and to make cheating difficult to attackers. It is impossible to hack all 3 servers that are not connected to each other because the results would always be different. Changing the data in one server is not going to change or update the other two and in order to rigged the election results all three servers would have to be breached to make those results valid. (Retrieved on August 10, 2016/ https://kami.com.ph/9430-6-things-filipinos-know-vote-counting-machine-issue.html).</p>
 
@@ -179,7 +179,7 @@ Print the election returns and transmit electronically the election results, thr
 
 ====System Vulnurabilities====
 =====The MD5 Security Algorithm=====
-<p style="text-indent:30px; text-align: justify">In 1992, MD5 (Mekle-Damgard 5) security algorithm was developed in order to address the problem of the MD4 algorithm. It is known to be open source and is widely use to ensure the data’s integrity. However, after 4 years of its development, weaknesses with the said algorithm were discovered upon the researches done by a computer scientist based in the University of California. Moreover, in 2007, Lenstra and Stevens, both are computer scientists, further showed that the MD5 is not a reliable algorithm to use because they found out that the hash function is vulnerable of collisions. This means that two different files with different functions may produce identical MD5 hash values which shows that MD5 is not enough to secure the data’s integrity. The Carnegie Mellon University Software Engineering Institute also rejected the MD5 security algorithm after discovering that attackers of the system can generate data that illegitimately appears to be authentic. They stated that the MD5 algo-rithm should be considered cryptographically broken or unsuitable for further use. If the MD5 failed to meet its purpose, there are other hashing algorithms that can be used in order to verify the integrity of the files. (Retrieved on August 28, 2016/ http://www.thinkingpinoy.net/2016/05/bbm-vs-leni-comelec-smartmatic-obsolete-MD5-technology.html).</p>
+<p style="text-indent:30px; text-align: justify">In 1992, MD5 (Mekle-Damgard 5) security algorithm was developed in order to address the problem of the MD4 algorithm. It is known to be open source and is widely use to ensure the data’s integrity. However, after 4 years of its development, weaknesses with the said algorithm were discovered upon the researches done by a computer scientist based in the University of California. Moreover, in 2007, Lenstra and Stevens, both are computer scientists, further showed that the MD5 is not a reliable algorithm to use because they found out that the hash function is vulnerable of collisions. This means that two different files with different functions may produce identical MD5 hash values which shows that MD5 is not enough to secure the data’s integrity. The Carnegie Mellon University Software Engineering Institute also rejected the MD5 security algorithm after discovering that attackers of the system can generate data that illegitimately appears to be authentic. They stated that the MD5 algorithm should be considered cryptographically broken or unsuitable for further use. If the MD5 failed to meet its purpose, there are other hashing algorithms that can be used in order to verify the integrity of the files. (Retrieved on August 28, 2016/ http://www.thinkingpinoy.net/2016/05/bbm-vs-leni-comelec-smartmatic-obsolete-MD5-technology.html).</p>
 
 <p style="text-indent:30px; text-align: justify">On the other hand, Microsoft, a well-known software company, took a small step to increase the security of enterprises by following industry standards that weaker/shorter key lengths were no longer viable for production use. Microsoft announced a Security advisory that will block the MD5 hash algorithm. This hashing algorithm is quite long in the tooth and has not been a recommended hash for many years. (Retrieved on August 28, 2016 / https://pkisolutions.com/goodbye-md5-sooner-than-you-think/).</p>
 
@@ -236,32 +236,56 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Context Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/context%20diagram_zps7fxapaln.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/context%20diagram_zpsmbkp20ah.png</center>
 
 ===Data Flow Diagram===
 
 ====Diagram 0====
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/dfd%20diagram%200_zpsojxjfa0g.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/0-ps_zps7aesu5kr.png</center>
 
 ====Diagram 1====
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/dfd%20diagram%201_zpsrh30uain.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/event-table_zps0i6sowgt.png</center>
+
+====Diagram 2====
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/2-ps_zpsqqwwqz1q.png</center>
 
 ====Diagram 3====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/3-ps_zps5q99uenn.png</center>
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/dfd%20diagram%203_zps8rwtlm6y.png</center>
+====Diagram 4====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/4-ps_zpsn3sxpxd1.png</center>
+
+====Diagram 5====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/5-ps_zpsb15ilpbs.png</center>
+
 
 ===Use Case Diagram===
-<center></center>
+
+====Diagram 1====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-1_zpssdywzboz.png</center>
+
+====Diagram 2====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-2_zpsamzeswus.png</center>
+
+====Diagram 3====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-3_zps369rt9kt.png</center>
+
+====Diagram 4====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-4_zpsmd7hgs9s.png</center>
+
+====Diagram 5====
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-5_zpsbrgbjgfl.png</center>
 
 ===Activity Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/activity-diagram_zpsvapn2uga.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/activity-diagram_zpsf16ftiwj.png</center>
 
 ===Object Diagram===
 
-<center></center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Object%20Diagram_zpsceh0t1jd.jpg</center>
 
 ===Class Diagram===
 
@@ -269,19 +293,19 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Communication Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/comm-diagram_zpswovydnne.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/comm-diagram_zpsmb0mfx5y.png</center>
 
 ===State Diagram===
 
-<center></center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/state-diagram_zps4wj9ppjg.png</center>
 
 ===Timing Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/timing-diagram_zpsqik3wc2b.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/timing-diagram_zpsqmg2vt3a.png</center>
 
 ===Sequence Diagram===
 
-<center></center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/seq-diagram_zpszyigoclm.png</center>
 
 ===Component Diagram===
 
@@ -290,18 +314,17 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Composite Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/composite-diagram_zpswat9kkbs.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/composite-diagram_zpsfhheptie.png</center>
 
 ===Interaction Overview Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/0cbcf008-d133-45d1-98b2-92dec7e5c553_zpsuma1g8nw.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/interaction-diagram_zpsrlu1zp2p.png</center>
 
 ===Package Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/TAPAT%20Package%20Diagram_zpsamzyzkou.jpg</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Package%20Diagram_zpsuv1cozny.jpg</center>
 
 ===Deployment Diagram===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/TAPAT%20Deployment%20Diagram_zpsij7fqssr.jpg</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Deployment%20Diagram_zpsyiy5ypev.png</center>
 
-===Data Dictionary===
