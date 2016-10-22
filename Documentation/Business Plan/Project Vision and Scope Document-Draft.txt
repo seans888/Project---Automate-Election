@@ -1,0 +1,61 @@
+Project Vision and Scope Document - Draft
+
+I. Business Requirements (Joanna)
+	a. Background
+	b. Business Opportunity
+	c. Business Objectives and Success Criteria
+	d. Customer or Market Needs
+	e. Business Risks
+II. Vision of the Solution (Mikha)
+	a. Vision Statement
+	b. Major Features
+	c. Assumptions and Dependencies
+III. Scope and Limitations (Maj)
+	a. Scope of Initial Release
+	b. Scope of Subsequent Releases
+	c. Limitations and Exclusions
+
+1.	Business Requirements
+The main objectives of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. 
+1.1.	Background
+After years of having a manual voting system, the Philippines have finally adopted an Automated Election System (AES) in 2010. This was mandated by Republic Act No. 9369 which is the Amended Elections Automated Law. The law stated that there would be paper-based election system defined as “a type of automated election system that uses paper ballots, records, and counts votes, tabulates, consolidates, canvases, and transmits electronically the results of the vote counts.” (Angkaya, 2011).
+The Automated Election Systems in the Philippines follows a sequence of process. Focusing on the transmission module of the system, the process starts when the polling precincts closes on the election day. The PCOS machines transmit the vote counts or election returns to the corresponding servers and canvassing centers. From the PCOS machines, the ERs are transmitted to the central server, to a transparency server, and to the municipal board of canvassers (MBOC) in the consolidation and canvassing system. From the MBOC, the results are brought to the provincial board of canvassers (PBOC) or the regional board of canvassers (RBOC), where the results are collected and then transmitted to the national board of canvassers (NBOC), where the results for national positions are canvassed. The MBOC and PBOC also separately send ERs to the central server. Moreover, the canvassing system processes the ERs that were transmitted. Public telecommunication networks are assigned to be the main channel when transmitting the ERs. There are back-up plans made if the network fails to accomplish its task. For example, transmissions can be made via satellite to avoid delays when problems occur.
+During the course of the transmission of ERs, electoral fraud is inevitable. There are a lot of issues concerning the effectivity and efficiency of the machine and servers during the elections. For instance, the camp of Senator Ferdinand Marcos Jr., who ran for the position of vice president, expressed his concerns with regard to the alleged “Secret Servers”. Smartmatic’s Marlon Garcia, the head of the technical support team, admitted that aside from the three servers that was authorized by the comelec, there was also a “meet-me room” where several servers were housed. It has also been further disclosed that the secret servers were intentionally not mentioned by the Comelec and Smartmatic to the public making it more suspicious. The purpose of the said “secret server” or the “queue server” is to first receive all the transmitted votes before distributing it to the three official servers declared by the Comelec. However, the normal process that should be done for the ER transmission as mandated by the law is to simply transmit the votes directly to the said servers. These servers are the Municipal Board of Canvassing Server, the Central Server, and the Transparency Server. Moreover, another problem being pointed out was that the “secret server” never undergone the initial source code review which is essential in every machine that would be used during the elections. Additionally, there were no watchers assigned in the said server putting the integrity of the May 2016 election under a cloud of doubt.
+Amidst the controversy of the existence of “Secret Servers”, there has also been a dispute on the altering of the source code resulting to a regeneration of hash codes. From a leaked screenshot, it has been evident that Smartmatic and Comelec uses the MD5 hash code algorithm and at the same time shows that the hash codes mismatched after the alteration was made. However, IT experts claim that the use of MD5 is questionable when it comes to its reliability in securing the data. MD5 is open source and it has been used to verify the file’s integrity.
+
+1.2.	Business Opportunity
+Currently, there is only one AES provider in the country which is the Smartmatic. This leads to monopolization of the technology. There is no competition in the market that makes it expensive. 
+
+1.3.	Business Objectives and Success Criteria
+The main objectives of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. 
+
+1.4.	Customer or Market Needs
+
+The project needs to be reliable, transparent and accurate in any level. Furthermore, it has to have faultless security that will ensure the system’s credibility. 
+
+1.5.	Business Risks
+There would be major problem in the resources needed to develop the system such as manpower, financial resources, and lack of functional infrastructure.
+2.	Vision of the Solution
+The project aims to practice democracy in a most reliable way possible this includes integrity and innovation.  
+2.1.	Vision Statement
+The main goals of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. 
+
+
+2.2.	Major Features
+1.	Authentication from the VCM to the server and vice versa.
+2.	Data integrity of the votes through encryption algorithms.
+3.	The use of Diffie-Helman algorithm in key generation
+
+
+2.3.	Assumptions and Dependencies
+The current automated election system does not have any way of authenticating the servers that the VCMs are sending the votes to. It is possible that there are anomalies happening within the server level of the AES. 
+3.	Scope and Limitations
+The scope of the project would only include the issues and possible solutions for the security of the transmission of election returns on the server-level of the automated election system in the Philippines. Further study on the other parts of the automated election system will no longer be covered.
+3.1.	Scope of Initial Release
+The project only focuses on the security measures in the server-level of the Automated Election System. Moreover, the system intends to have a hybrid cryptography to ensure the integrity and confidentiality of data. 
+3.2.	Scope of Subsequent Releases
+The project can also implement the security measures for the counting of the votes in the near future. 
+3.3.	Limitations and Exclusions
+The project would not provide security measures aside from server-level infrastructure. 
+4.	Business Context
+Smartmatic has received integrity issues ever since the first automated election in the Philippines. A lot of organizations accused the company of electoral fraud and vote manipulations throughout the elections.  
