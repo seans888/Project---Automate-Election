@@ -166,7 +166,7 @@
 <p style="text-indent:30px; text-align: justify">During the 2016 elections, congress will have their own server wherein the members of the senate and house of representatives can monitor the canvassing of the votes and to officially proclaim the winner for the national level. (Retrieved on August 27, 2016 / http://www.rappler.com/newsbreak/iq/91663-philippine-automated-election-sytem-explained).</p>
 
 ====Issues in the system====
-<p style="text-indent:30px; text-align: justify">During the 2016 elections, Bong Bong Marcos’ camp believes that there exists a “Fourth Server” or also known as the “Queue Server”. It has been revealed that the Comelec and Smartmatic has been keeping it from the public. Instead of letting the ERs be directly transmitted to the three official servers, namely the CCS, Central Server, and the Transparency server, the results were first being processed and consolidated in the “Queue Server”. Another problem with the secret server is that the source code being used was never reviewed despite of it being a requirement in the law. Moreover, there were no poll watchers assigned for these servers making it questionable to both the public and the administrators. According to a statement made by Rodriguez, a representative of Marcos’ camp, the integrity of the 2016 May elections has been questioned because of the unexpected situation made by the Comelec and Smartmatic. The ERs that were presented to the public did not come directly from the transparency server.  Alternatively, the results were first transmitted to a “Queue Server” where they were “consolidated and processed” and the “Queue Server” sends the data to the transparency servers which is against the law. (Retrieved on August 10, 2016/ http://www.manilatimes.net/smartmatic-admits-using-unofficial-servers/275442/).</p>
+<p style="text-indent:30px; text-align: justify">During the 2016 elections, Bong Bong Marcos’ camp believes that there exists a “Fourth Server” or also known as the “Queue Server”. It has been revealed that the Comelec and Smartmatic has been keeping it from the public. Instead of letting the ERs be directly transmitted to the three official servers, namely the Municipal Board of Canvassing Server, Comelec Server, and the Transparency server, the results were first being processed and consolidated in the “Queue Server”. Another problem with the secret server is that the source code being used was never reviewed despite of it being a requirement in the law. Moreover, there were no poll watchers assigned for these servers making it questionable to both the public and the administrators. According to a statement made by Rodriguez, a representative of Marcos’ camp, the integrity of the 2016 May elections has been questioned because of the unexpected situation made by the Comelec and Smartmatic. The ERs that were presented to the public did not come directly from the transparency server.  Alternatively, the results were first transmitted to a “Queue Server” where they were “consolidated and processed” and the “Queue Server” sends the data to the transparency servers which is against the law. (Retrieved on August 10, 2016/ http://www.manilatimes.net/smartmatic-admits-using-unofficial-servers/275442/).</p>
 
 <p style="text-indent:30px; text-align: justify">Officially, there are three servers namely, the transparency server, the central server, and the canvassing center servers. When a voter fills out a ballot it would be fed into the Vote Counting Machine (VCM). The data entering the machine would not be sent to its corresponding servers until the end of the voting period. The votes are then transmitted to the three servers that are independent with each other. This is to secure the data and to make cheating difficult to attackers. It is impossible to hack all 3 servers that are not connected to each other because the results would always be different. Changing the data in one server is not going to change or update the other two and in order to rigged the election results all three servers would have to be breached to make those results valid. (Retrieved on August 10, 2016/ https://kami.com.ph/9430-6-things-filipinos-know-vote-counting-machine-issue.html).</p>
 
@@ -179,7 +179,7 @@ Print the election returns and transmit electronically the election results, thr
 
 ====System Vulnurabilities====
 =====The MD5 Security Algorithm=====
-<p style="text-indent:30px; text-align: justify">In 1992, MD5 (Mekle-Damgard 5) security algorithm was developed in order to address the problem of the MD4 algorithm. It is known to be open source and is widely use to ensure the data’s integrity. However, after 4 years of its development, weaknesses with the said algorithm were discovered upon the researches done by a computer scientist based in the University of California. Moreover, in 2007, Lenstra and Stevens, both are computer scientists, further showed that the MD5 is not a reliable algorithm to use because they found out that the hash function is vulnerable of collisions. This means that two different files with different functions may produce identical MD5 hash values which shows that MD5 is not enough to secure the data’s integrity. The Carnegie Mellon University Software Engineering Institute also rejected the MD5 security algorithm after discovering that attackers of the system can generate data that illegitimately appears to be authentic. They stated that the MD5 algorithm should be considered cryptographically broken or unsuitable for further use. If the MD5 failed to meet its purpose, there are other hashing algorithms that can be used in order to verify the integrity of the files. (Retrieved on August 28, 2016/ http://www.thinkingpinoy.net/2016/05/bbm-vs-leni-comelec-smartmatic-obsolete-MD5-technology.html).</p>
+<p style="text-indent:30px; text-align: justify">In 1992, MD5 (Mekle-Damgard 5) security algorithm was developed in order to address the problem of the MD4 algorithm. It is known to be open source and is widely use to ensure the data’s integrity. However, after 4 years of its development, weaknesses with the said algorithm were discovered upon the researches done by a computer scientist based in the University of California. Moreover, in 2007, Lenstra and Stevens, both are computer scientists, further showed that the MD5 is not a reliable algorithm to use because they found out that the hash function is vulnerable of collisions. This means that two different files with different functions may produce identical MD5 hash values which shows that MD5 is not enough to secure the data’s integrity. The Carnegie Mellon University Software Engineering Institute also rejected the MD5 security algorithm after discovering that attackers of the system can generate data that illegitimately appears to be authentic. They stated that the MD5 algo-rithm should be considered cryptographically broken or unsuitable for further use. If the MD5 failed to meet its purpose, there are other hashing algorithms that can be used in order to verify the integrity of the files. (Retrieved on August 28, 2016/ http://www.thinkingpinoy.net/2016/05/bbm-vs-leni-comelec-smartmatic-obsolete-MD5-technology.html).</p>
 
 <p style="text-indent:30px; text-align: justify">On the other hand, Microsoft, a well-known software company, took a small step to increase the security of enterprises by following industry standards that weaker/shorter key lengths were no longer viable for production use. Microsoft announced a Security advisory that will block the MD5 hash algorithm. This hashing algorithm is quite long in the tooth and has not been a recommended hash for many years. (Retrieved on August 28, 2016 / https://pkisolutions.com/goodbye-md5-sooner-than-you-think/).</p>
 
@@ -212,7 +212,16 @@ Print the election returns and transmit electronically the election results, thr
 ==Proposed Solution to the Problem==
 <p style="text-indent:30px; text-align: justify">The current system only provides a hash value that would secure the integrity of the data. However, it lacks the security mechanism that would address confidentiality of the system which makes it possible for other servers aside from the official servers to exist in the transmission of the election returns.</p>
 <p style="text-indent:30px; text-align: justify">As for the proposed solution this issue, a hybrid public key infrastructure has to be implemented to not only authenticate the data being transmitted but to also allow the verification of the server’s authenticity. The process will start once the voting period ends around 5:00pm of the election day. On the current system, the voting counting machine (VCM) will have to immediately send the election returns to the following servers: Municipal Board of Canvassers Server in the Consolidation and Canvassing System (CCS), Central Server, and Transparency Server. In the proposed system, the three said official servers will have to send an encrypted data to the VCM first with the use of the public key of the said VCM. This is to provide the VCM a go-signal to transmit the election returns. The VCM then will have to decrypt the data using its own private key to verify that the data was indeed from an authentic server in the system. Once the identification of the servers is verified, the VCM and the server can now create key exchange using the Diffie-Hellman algorithm that will yield its own generated key. Once a key is generated, this will be used to encrypt the election returns and send to the servers. The servers will have to verify the hash value of the election returns to know check the integ-rity of the data as well as its origin.</p>
-
+<p>Current Update:</p>
+<ul>
+<li>There is no issue with the speed of having multiple layers of hashing algorithms.</li>
+<li>It is suggested to have a single server per level that would serve as the key generator.</li>
+<li>However, another server (key generator) could be added in order to be the backup server in case the currently used server crashes.</li>
+</ul>
+<p>Prototype Design:</p>
+<center><p>http://i1152.photobucket.com/albums/p497/joannability/prototype_zpskqggf2cn.png</p></center>
+==Results and Discussions==
+==Conclusions and Recommendations==
 
 ==References==
 <ul>
@@ -232,11 +241,11 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Event Table===
 
-<center>http://i53.photobucket.com/albums/g49/Joanna_Hipolito/event-table_zps48hmwuk8.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Event%20table_zpsis5capan.png</center>
 
 ===Context Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/context%20diagram_zpsmbkp20ah.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Context%20Diagram_zpsrfokuejc.png</center>
 
 ===Data Flow Diagram===
 
@@ -279,6 +288,19 @@ Print the election returns and transmit electronically the election results, thr
 ====Diagram 5====
 <center>http://i1244.photobucket.com/albums/gg572/monikkiiii/us-5_zpsbrgbjgfl.png</center>
 
+
+===Use Case with Full Description
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/uswfd-1_zpsehbqlev7.png</center>
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/uswfd-2_zps2sdsaoon.png</center>
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/uswfd-3_zpsygg94yqw.png</center>
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/uswfd-4_zpsmcrzdhqb.png</center>
+
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/uswfd-5_zpsxoiamlk1.png</center>
+
 ===Activity Diagram===
 
 <center>http://i1244.photobucket.com/albums/gg572/monikkiiii/activity-diagram_zpsf16ftiwj.png</center>
@@ -289,28 +311,27 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Class Diagram===
 
-<center></center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Class%20Diagram_zpsi66cngyq.png</center>
 
 ===Communication Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/comm-diagram_zpsmb0mfx5y.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Communication%20Diagram_zpslmo1gpjd.png</center>
 
 ===State Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/state-diagram_zps4wj9ppjg.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/State%20Diagram_zpszpvca2rk.png</center>
 
 ===Timing Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/timing-diagram_zpsqmg2vt3a.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Timing%20Diagram_zps6rmqd1em.png</center>
 
 ===Sequence Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/seq-diagram_zpszyigoclm.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Sequence%20Diagram_zpswfgjxloz.png</center>
 
 ===Component Diagram===
 
 <center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Component%20Diagram_zpsr06uk7rz.png</center>
-
 
 ===Composite Diagram===
 
@@ -318,7 +339,7 @@ Print the election returns and transmit electronically the election results, thr
 
 ===Interaction Overview Diagram===
 
-<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/interaction-diagram_zpsrlu1zp2p.png</center>
+<center>http://i1244.photobucket.com/albums/gg572/monikkiiii/CSPROJ/Interaction%20Overview_zpssvl9wmhn.png</center>
 
 ===Package Diagram===
 
@@ -328,3 +349,130 @@ Print the election returns and transmit electronically the election results, thr
 
 <center>http://i1244.photobucket.com/albums/gg572/monikkiiii/Deployment%20Diagram_zpsyiy5ypev.png</center>
 
+==Statement of Work==
+
+===Introduction/Background===
+<p style="text-indent:30px; text-align: justify">The project developers had recently conducted a research regarding the effectivity of the current Automated Election System in securing the data it carries from the VCMs and servers. To provide a solution to the problem, they formulated a security architecture design that can be used to secure the election returns. The developers also realized the importance of working with clients to develop tailored consulting solutions which can address the problem. Moreover, they believe that there can be an improvement with the current security features of the Automated Election System.</p>
+
+===Scope of Work===
+<p style="text-indent:30px; text-align: justify">The scope of the study would only include the issues and possible solutions for the security of the transmission of election returns on the server-level of the automated election system in the Philippines. Further study on the other parts of the automated election system will no longer be covered.</p>
+
+===Period of Performance===
+<p style="text-indent:30px; text-align: justify">The period of performance for the Hybrid Cryptography designed for the Automated Election System is 3 months beginning on 19 March 2016 through 22 December 2016.  All work must be scheduled to complete within this time frame. Any modifications or extensions will be carried on through the next phase of the project.</p>
+
+===Place of Performance===
+<p style="text-indent:30px; text-align: justify">The selected vendor for the Hybrid Cryptography designed for the Automated Election System will be the project developers themselves and will assist the customer in need of the security architecture at its own facility. The vendor is required to meet with the client at least once a week in order to plan the and lay out the details of the added security features and also to check if the developed system satisfies the requirements as mandated by the law for the Philippine Elections.</p>
+
+===Work Requirements===
+<p style="text-indent:30px; text-align: justify">As part of the Hybrid Cryptography for AES Project the vendor will be responsible for performing tasks throughout various stages of this project.  The following is a list of these tasks which will result in the successful completion of this project: 
+
+<br/>
+
+Kickoff:<br/>
+-	Vendor will create and present a draft of the project plan <br/>
+-	Vendor will present project plan to project consultants and advisers for review and approval><br/>
+-	Research on the vulnerabilities of the current automated election system<br/>
+-	Search for security methods that can be of used on the security design<br/>
+<br/>
+Design Phase:<br/>
+-	Work with a security expert to gather requirements and establish metrics<br/>
+-	Create security design based on collected requirements<br/>
+-	Develop security design proposal for project advisers and consultants for review and approval<br/>
+-	Present project status reports at weekly meeting<br/>
+<br/>
+Build Phase:<br/>
+-	Vendor will complete and finalized the design for AES<br/>
+-	Vendor will provide client with a detailed testing plan<br/>
+-	Vendor will conduct testing <br/>
+-	Vendor will resolve issues identified in testing<br/>
+-	Vendor will compile a testing report to present to client and project consultants and adviser for review/approval<br/>
+-	Present written status at weekly meeting<br/>
+<br/>
+Implementation Phase:<br/>
+-	Vendor will implement the new security design on the servers of the client<br/>
+-	Present written status at weekly meeting<br/>
+<br/>
+Training Phase:<br/>
+-	Vendor will provide a brief background on how the security features were improved<br/>
+-	Present written status at weekly meeting<br/>
+<br/>
+Project Handoff/Closure:<br/>
+-	Vendor will provide client with all documentation in accordance with the approved project plan<br/>
+-	Vendor will present project closure report to client for review and approval<br/>
+-	Vendor will complete the project requirements checklist showing that all project tasks have been completed<br/>
+-	Present written status at weekly meeting<br/>
+
+===Schedule/Milestones===
+
+===Acceptance Criteria===
+<p style="text-indent:30px; text-align: justify">
+For the Hybrid Cryptography for AES Project, the acceptance of all deliverables will reside with the client’s executive officers that were assigned to work with the project developers. The personnel will maintain a small team of three advisors to ensure the completeness of each stage of the project and that the scope of work has been met.  Once a project phase is completed and the vendor provides their report/presentation for review and approval. 
+
+Once all project tasks have been completed, the project will enter the handoff/closure stage.  During this stage of the project, the vendor will provide their project closure report and project task checklist to the client.  The acceptance of this documentation by the client will acknowledge acceptance of all project deliverables and that the vendor has met all assigned tasks.  
+
+Any discrepancies involving completion of project tasks or disagreement between the client and the vendor will be referred to both organizations’ contracting offices for review and discussion.</p>
+
+==Project Vision and Scope==
+<p style="text-indent:30px; text-align: justify"></p>
+
+
+===Business Requirements===
+<p style="text-indent:30px; text-align: justify">The main objectives of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. </p>
+
+====Background====
+<p style="text-indent:30px; text-align: justify">After years of having a manual voting system, the Philippines have finally adopted an Automated Election System (AES) in 2010. During the course of the transmission of election returns or votes , electoral fraud is inevitable. There are a lot of issues concerning the effectivity and efficiency of the machine and servers during the elections. For instance, the camp of Senator Ferdinand Marcos Jr., who ran for the position of vice president, expressed his concerns with regard to the alleged “Secret Servers”. There has also been a dispute on the altering of the source code resulting to a regeneration of hash codes. From a leaked screenshot, it has been evident that Smartmatic and Comelec uses the MD5 hash code algorithm and at the same time shows that the hash codes mismatched after the alteration was made. However, IT experts claim that the use of MD5 is questionable when it comes to its reliability in securing the data. MD5 is open source and it has been used to verify the file’s integrity.</p>
+
+
+====Business Opportunity====
+<p style="text-indent:30px; text-align: justify">Currently, there is only one AES provider in the country which is the Smartmatic. This leads to monopolization of the technology. There is no competition in the market that makes it expensive. </p>
+
+
+====Business Objectives and Success Criteria====
+<p style="text-indent:30px; text-align: justify">The main objectives of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. </p>
+
+====Customer or Market Needs====
+<p style="text-indent:30px; text-align: justify">The project needs to be reliable, transparent and accurate in any level. Furthermore, it has to have faultless security that will ensure the system’s credibility. </p>
+
+====Business Risks====
+<p style="text-indent:30px; text-align: justify">There would be major problem in the resources needed to develop the system such as manpower, financial resources, and lack of functional infrastructure.</p>
+
+
+===Vision of the Solution===
+<p style="text-indent:30px; text-align: justify">The project aims to practice democracy in a most reliable way possible this includes integrity and innovation.  </p>
+
+====Vision Statement====
+<p style="text-indent:30px; text-align: justify">The main goals of the project are to know the vital issues currently present in the transmission of the votes, to propose a system that would prevent electoral fraud in the transmission of votes in the automated election system and to provide a technical solution that allows the verification of the servers’ authenticity through the use of a public key infrastructure as a security mechanism. </p>
+
+====Major Features====
+<p style="text-indent:30px; text-align: justify">
+1.	Authentication from the VCM to the server and vice versa.</br>
+2.	Data integrity of the votes through encryption algorithms.</br>
+3.	The use of Diffie-Helman algorithm in key generation</p>
+
+====Assumptions and Dependencies====
+<p style="text-indent:30px; text-align: justify">The current automated election system does not have any way of authenticating the servers that the VCMs are sending the votes to. It is possible that there are anomalies happening within the server level of the AES. </p>
+
+===Scope and Limitations===
+<p style="text-indent:30px; text-align: justify">The scope of the project would only include the issues and possible solutions for the security of the transmission of election returns on the server-level of the automated election system in the Philippines. Further study on the other parts of the automated election system will no longer be covered.
+</p>
+
+====Scope of Initial Release====
+<p style="text-indent:30px; text-align: justify">The project only focuses on the security measures in the server-level of the Automated Election System. Moreover, the system intends to have a hybrid cryptography to ensure the integrity and confidentiality of data. </p>
+
+====Scope of Subsequent Releases====
+<p style="text-indent:30px; text-align: justify">The project can also implement the security measures for the counting of the votes in the near future. </p>
+
+====Limitations and Exclusions====
+<p style="text-indent:30px; text-align: justify">The project would not provide security measures aside from server-level infrastructure. </p>
+
+===Business Context===
+<p style="text-indent:30px; text-align: justify">Smartmatic has received integrity issues ever since the first automated election in the Philippines. A lot of organizations accused the company of electoral fraud and vote manipulations throughout the elections.  </p>
+
+====Stakeholder Profiles====
+<p style="text-indent:30px; text-align: justify"></p>
+
+====Project Priorities====
+<p style="text-indent:30px; text-align: justify"></p>
+
+====Operating Environment====
+<p style="text-indent:30px; text-align: justify"></p>
